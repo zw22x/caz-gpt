@@ -10,11 +10,11 @@
     Character-level for now (yes, on purpose — I want to understand every single byte first)
     Loss is already dropping fast</p>
     <h2>What’s in this repo right now</h2>
-    <p>textdata.py        → infinite streaming dataloader (the part I’m most proud of)
+    textdata.py        → infinite streaming dataloader (the part I’m most proud of)
     config.py      → clean hyper-params for the 124M model
     model.py       → the actual transformer (coming tomorrow)
     train.py       → fast training loop with AMP & checkpointing
-    generate.py    → talk to the model once it’s alive</p>
+    generate.py    → talk to the model once it’s alive
     <h2>Next steps (doing them one by one):</h2>
     <p>Switch to BPE (tiktoken) — char-level is cute but I want real intelligence
     Train until loss < 2.0
