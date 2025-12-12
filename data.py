@@ -19,7 +19,7 @@ class FineWebEdu(IterableDataset):
         buffer = ""
         for sample in self.dataset:
             text = sample['text'].strip()
-            if len(text) < 100: # skip garbage short sample
+            if len(text) < 100: # skip short sample (ads, nav menus, etc.)
                 continue
             buffer += " " + text 
 
