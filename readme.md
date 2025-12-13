@@ -11,12 +11,9 @@
     Loss is already dropping fast</p>
     <h2>What’s in this repo right now</h2>
     textdata.py        → infinite streaming dataloader (the part I’m most proud of)
-    
     config.py      → clean hyper-params for the 124M model
     model.py       → the actual transformer (coming tomorrow)
-    
     train.py       → fast training loop with AMP & checkpointing
-    
     generate.py    → talk to the model once it’s alive
     <h2>Next steps (doing them one by one):</h2>
     <p>Switch to BPE (tiktoken) — char-level is cute but I want real intelligence
