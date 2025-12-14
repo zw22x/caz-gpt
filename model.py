@@ -151,5 +151,6 @@ class GPT(nn.Module):
             logits = self.lm_head(x[:, [-1], :]) # using list [-1] to preserve the time dim
             loss = None
 
+            return logits, loss
 # TODO: crop_block_size function, from_pretrained function, optimizer configuration function
 # TODO: estimate_mfu, generate
